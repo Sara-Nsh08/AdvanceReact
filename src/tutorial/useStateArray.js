@@ -6,11 +6,15 @@ function UseStateArray() {
         <>
         {
         people.map((person) => {
-            console.log(person);
-            return("I am leaning about Marvel")
+            const {id, name}=person;
+            return(
+                <div key={id} className='item'>
+                    <h4>{name}</h4>
+                </div>
+            )
         }
     )}
-        
+        <button className="btn" onClick={() =>setPeople([])}>Clear the Avengers</button>
         </>
     )
 }
