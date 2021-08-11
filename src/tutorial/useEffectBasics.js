@@ -8,7 +8,7 @@ function UseEffectBasics() {
             document.title = `New Messages(${value})`;//but conditional statements can be called inside hooks
         }
 
-    });
+    },[value]);
     console.log('render component');
     return (
         <>
