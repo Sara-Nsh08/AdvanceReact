@@ -5,7 +5,8 @@ import React from "react";
 //import UseStateObject from "./tutorial/useStateObject";
 //import UseStateCounter from "./tutorial/useStateCounter";
 import "./index.css";
-import UseEffectBasics from "./tutorial/useEffectBasics";
+//import UseEffectBasics from "./tutorial/useEffectBasics";
+import Forms from "./tutorial/Forms";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/*<UseStateArray />*/}
       {/*<UseStateObject />*/}
       {/*<UseStateCounter />*/}
-      <UseEffectBasics />
+      {/*<UseEffectBasics />*/}
+      <Forms />
     </div>
   )
 }
