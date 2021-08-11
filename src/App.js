@@ -1,7 +1,8 @@
 import React from "react";
 //import UseStateErrorEx from "./tutorial/useStateErrorEx";
 //import UseStateBasic from "./tutorial/useStateBasic";
-import UseStateArray from "./tutorial/useStateArray";
+//import UseStateArray from "./tutorial/useStateArray";
+import UseStateObject from "./tutorial/useStateObject";
 import "./index.css";
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
       <h2>Advance React JS</h2>
       {/*<UseStateErrorEx />*/}
       {/*<UseStateBasic />*/}
-      <UseStateArray />
+      {/*<UseStateArray />*/}
+      <UseStateObject />
     </div>
   )
 }
-
 export default App;
