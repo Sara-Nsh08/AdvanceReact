@@ -1,10 +1,17 @@
 import React from 'react';
 import {data} from "./Data";
 function UseStateArray() {
+    const [people, setPeople]=React.useState(data)
     return (
-        <div>
-            <h2>Use state array is in action</h2>
-        </div>
+        <>
+        {
+        people.map((person) => {
+            console.log(person);
+            return("I am leaning about Marvel")
+        }
+    )}
+        
+        </>
     )
 }
 
