@@ -3,8 +3,9 @@ import React from "react";
 //import UseStateBasic from "./tutorial/useStateBasic";
 //import UseStateArray from "./tutorial/useStateArray";
 //import UseStateObject from "./tutorial/useStateObject";
-import UseStateCounter from "./tutorial/useStateCounter";
+//import UseStateCounter from "./tutorial/useStateCounter";
 import "./index.css";
+import UseEffectBasics from "./tutorial/useEffectBasics";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/*<UseStateBasic />*/}
       {/*<UseStateArray />*/}
       {/*<UseStateObject />*/}
-      <UseStateCounter />
+      {/*<UseStateCounter />*/}
+      <UseEffectBasics />
     </div>
   )
 }
