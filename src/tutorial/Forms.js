@@ -6,17 +6,17 @@ function Forms() {
     const [people, setPeople] = useState([]);
     const handleSubmit = (e) => {
         e.preventDefault();    //used to prevent default behaviour of browser
-        if(firstName && email){
+        if (firstName && email) {
             console.log('Submit the value');
-            const person={firstName:firstName,email:email} //creating the object person to store to database
-            //console.log(person);
-            setPeople((people)=> {
+            const person = { id: new Date().getTime().toString(),firstName,email } //creating the object person to store to database
+            console.log(person);
+            setPeople((people) => {
                 return [...people, person];
             });
-            setFirstName(' ');
-            setEmail(' ');
+            setFirstName('');
+            setEmail('');
         }
-        else{
+        else {
             console.log("Emptyvalue");
         }
     }
@@ -34,6 +34,16 @@ function Forms() {
                     </div>
                     <button type="submit">Submit</button>
                 </form>
+                {people.map((person, index) => {
+                    const {id, firstName, email} = person;
+                    return (
+                        <div className="item" key={id}>
+                            <h4>{firstName}</h4>
+                            <p>{email}</p>
+                        </div>
+                    );
+                })
+                }
             </article>
         </>
     )
