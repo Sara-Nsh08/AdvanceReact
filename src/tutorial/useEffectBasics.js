@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 function UseEffectBasics() {
-    const [value, setValue]= useState(0);
+    const [value, setValue] = useState(0);
     useEffect(() => {
         console.log('call useEffect');
-        document.title = `New Messages(${value})`;
+        if (value > 1) {                  //react hooks cannot be called inside conditional statements
+            document.title = `New Messages(${value})`;//but conditional statements can be called inside hooks
+        }
 
     });
     console.log('render component');
@@ -12,7 +14,7 @@ function UseEffectBasics() {
         <>
             <div>
                 <h1>{value}</h1>
-                <button className='btn' onClick={()=>setValue(value+1)}>Click</button>
+                <button className='btn' onClick={() => setValue(value + 1)}>Click</button>
             </div>
         </>
     )
