@@ -1,12 +1,11 @@
 import React from "react";
 import "./index.css";
-import Forms from "./tutorial/Forms";
+import LearnJSON from "./tutorial/LearnJSON";
 
 function App() {
   return (
     <div className="container">
-      <h2>Application Form</h2>
-          <Forms />
+      <LearnJSON />
     </div>
   )
 }
