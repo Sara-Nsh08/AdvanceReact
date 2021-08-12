@@ -1,8 +1,16 @@
 {
-    "users": [
-        {
-            "name":"saransh",
-            "id":1
-        }
-    ]
+  "users": [
+    {
+      "name": "saransh",
+      "id": 1
+    },
+    {
+      "name": "Sara",
+      "id": 2
+    },
+    {
+      "name": "Sara",
+      "id": 3
+    }
+  ]
 }
