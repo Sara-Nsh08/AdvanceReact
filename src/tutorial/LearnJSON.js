@@ -16,15 +16,19 @@ function LearnJSON() {
         promis.catch(error => {
             console.error(Error)    //console logging error from server if any
         })
-        let c=b;
+        let c = b;
         console.log(c);
     }
-
+    const getUsers = () => {
+        axios.get("http://localhost:4000/users").then(users => {
+            console.log(users);
+        }) //we are geting the data from our json server and then storing it in 'user' to cosole the array of the objects
+    }
     return (
         <>
             <h1>hello we are learning json</h1>
             <button type="button" className='btn' onClick={handleClick}>Post User</button>
-            {/*<button type="button" className='btn' onClick={getUsers}>Get User</button>*/}
+            <button type="button" className='btn' onClick={getUsers}>Get User</button>
         </>
     )
 }
