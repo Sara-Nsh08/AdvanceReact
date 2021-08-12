@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css";
-import LearnJSON from "./tutorial/LearnJSON";
+import Index from "./tutorial/Reducer/index";
 
 function App() {
   return (
     <div className="container">
-      <LearnJSON />
+      <Index />
     </div>
   )
 }
