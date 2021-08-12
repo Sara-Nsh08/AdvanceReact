@@ -3,7 +3,7 @@ import React from 'react'
 function Modal() {
     return (
       <>
-      <h2>modal</h2>
+      <h2>Hello its the Modal</h2>
       </>
     )
 }
